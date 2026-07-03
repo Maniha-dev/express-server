@@ -3,10 +3,10 @@ const express = require ("express");
 const app = express();
 
 app.get('/', (req, res) => {
-    return res.send(`Heloo, ${req.query.name}`)
+    return res.send(`Hello, ${req.query.name}`)
 });
 app.get('/about', (req, res) =>{
-    return res.send("/Hello from aboutii!")
+    return res.send("/Hello from about!")
 });
 app.get('/services', (req, res) =>{
     return res.send("/Our service!")
